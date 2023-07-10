@@ -102,6 +102,4 @@ EOF
 CMD="${KAFKA_BIN_PATH}/kafka-reassign-partitions.sh --bootstrap-server $BOOTSTRAP_SERVER --reassignment-json-file mapping.json "
 
 ${CMD} --execute | tee reassignment.log
-
-echo "Verifying reassignment..."
 ${CMD} --verify
