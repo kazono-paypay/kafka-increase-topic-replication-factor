@@ -22,7 +22,7 @@ Topic: test-topic	PartitionCount: 2	ReplicationFactor: 1	Configs: segment.bytes=
 	Topic: test-topic	Partition: 1	Leader: 1	Replicas: 1	Isr: 1
 
 
-$ ./kafka-increase-replication-factor.sh --bootstrap-server localhost:19092 --topic test-topic --replica-list 1,2
+$ ./kafka-increase-replication-factor.sh --bootstrap-server localhost:19092 --topic test-topic --replica 1,2
 
 
 $ ./kafka-topics.sh --describe --bootstrap-server localhost:19092 --topic test-topic
